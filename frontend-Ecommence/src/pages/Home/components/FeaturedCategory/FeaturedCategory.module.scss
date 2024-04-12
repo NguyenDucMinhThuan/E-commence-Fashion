@@ -1,0 +1,17 @@
+.Men {
+    display: flex;
+    justify-content: space-between;
+    width: var(--default-layout-width);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Women {
+    display: flex;
+    justify-content: space-between;
+    width: var(--default-layout-width);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}

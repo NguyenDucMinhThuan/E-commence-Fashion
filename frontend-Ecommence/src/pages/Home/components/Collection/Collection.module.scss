@@ -1,0 +1,119 @@
+.wrapper {
+    width: var(--default-layout-width);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.seeAll-div {
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.seeMore-btn {
+    display: flex;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: rgb(127, 127, 127);
+    cursor: pointer;
+}
+//title-feature
+.category-home {
+    width: var(--default-layout-width);
+    position: relative;
+    margin-top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.category-title {
+    display: flex;
+    justify-content: space-between;
+    width: var(--default-layout-width);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+//Item
+.item-list {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    width: var(--default-layout-width);
+    height: 450px;
+    justify-content: space-between;
+}
+
+.item {
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #fff;
+    margin-left: 12px;
+    width: 280px;
+    height: 380px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    transition: translate 500ms ease-in;
+    translate: 100%;
+}
+
+.item-Image {
+    width: 280px;
+    height: 280px;
+}
+.item:hover {
+    transform: scale(1.08);
+    transition: transform 0.4s;
+}
+.item-Text {
+    padding: 8px 8px 0px 8px;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+}
+.item-Price {
+    color: rgb(3, 142, 5);
+    padding: 0px 0px 0px 8px;
+    font-size: 20px;
+    font: bold;
+    font-weight: 600;
+    display: flex;
+}
+/* Button */
+.button-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: var(--default-layout-width);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.prevSlide-btn,
+.nextSlide-btn {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(127, 127, 127);
+}
+
+//item Banner
+.item-Banner {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--default-layout-width);
+}

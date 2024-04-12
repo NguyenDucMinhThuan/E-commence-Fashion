@@ -1,0 +1,71 @@
+//title-feature
+.category-home {
+    display: flex;
+    justify-content: space-between;
+    width: var(--default-layout-width);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.seeAll-div {
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.seeMore-btn {
+    display: flex;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: rgb(127, 127, 127);
+    cursor: pointer;
+}
+
+//Item
+.item-list {
+    margin-top: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    width: var(--default-layout-width);
+    height: 460px;
+    justify-content: space-between;
+}
+
+.item {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 350px;
+    position: relative; /* Thêm thuộc tính này để có thể dùng z-index */
+    overflow: hidden;
+}
+.item-Text {
+    padding: 8px 8px 0px 8px;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+}
+.item-Price {
+    color: rgb(3, 142, 5);
+    padding: 0px 0px 0px 8px;
+    font-size: 20px;
+    font: bold;
+    font-weight: 600;
+    display: flex;
+}
+
+.item:hover {
+    transform: scale(1.08); /* Thay đổi scale của ảnh khi hover */
+    transition: transform 0.4s;
+}
+
+.item-Image {
+    width: 100%;
+    height: auto; /* Thay đổi chiều cao để phù hợp với chiều rộng */
+}

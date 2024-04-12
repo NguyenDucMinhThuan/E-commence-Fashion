@@ -1,0 +1,87 @@
+//Footer
+.footer {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 240px;
+    margin-top: 60px;
+    padding-top: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+//Privacy
+.privacy {
+    position: relative;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--default-layout-width);
+    justify-content: space-between;
+    border-top: 2px;
+    border-color: black;
+}
+
+.privacyItem {
+    display: flex;
+}
+
+.privacyDetail {
+    font-size: 20px;
+}
+
+.icon {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.privacyText {
+    font-weight: 300;
+}
+
+.privacyTextDetail {
+    font-weight: 100;
+}
+
+//Introduction
+.introduction {
+    padding-top: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--default-layout-width);
+    display: flex;
+    justify-content: space-between;
+}
+.introductionItem {
+    font-size: 20px;
+}
+.introductionText {
+    font-weight: 300;
+}
+
+.introductionTextDetail {
+    font: bold;
+    font-weight: 200;
+}
+
+// Line
+.line {
+    width: 1px;
+    height: 90px;
+    background-color: rgb(172, 172, 172);
+}
+
+//Company
+.company {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgb(172, 172, 172);
+}

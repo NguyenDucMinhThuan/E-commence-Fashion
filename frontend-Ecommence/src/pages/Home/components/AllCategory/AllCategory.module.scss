@@ -1,0 +1,72 @@
+//title-feature
+.category-home {
+    justify-content: space-between;
+    width: var(--default-layout-width);
+    position: relative;
+    margin-top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title {
+    width: var(--default-layout-width);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+//Item
+.item-list {
+    padding-top: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    width: var(--default-layout-width);
+    height: 500px;
+}
+
+.item {
+    margin-right: 12px;
+    width: 280px;
+    height: 300px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    transition: translate 500ms ease-in;
+    translate: 100%;
+}
+
+.item-Image {
+    width: 100%;
+}
+.item:hover {
+    transform: scale(1.08);
+    transition: transform 0.4s;
+}
+.item-Text {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+/* Button */
+.button-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: var(--default-layout-width, 100%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.prevSlide-btn,
+.nextSlide-btn {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(127, 127, 127);
+}

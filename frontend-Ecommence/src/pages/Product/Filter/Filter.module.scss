@@ -1,0 +1,124 @@
+.filter {
+    max-width: 300px;
+}
+
+.sidebar {
+    padding: 30px;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    left: 80%;
+    background-color: rgb(235, 235, 235);
+    z-index: 2;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: -20%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.input {
+    display: flex;
+}
+.text-filter {
+    font-size: 30px;
+    color: rgb(124, 124, 124);
+}
+
+.btn-filter {
+    background-color: rgb(235, 235, 235);
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+    font-size: 20px;
+    color: rgb(135, 135, 135);
+    cursor: pointer;
+}
+
+.div-filter {
+    max-width: 250px;
+    border-style: ridge;
+    margin-top: 20px;
+    padding-right: 20px;
+    border-bottom: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-color: rgb(208, 208, 208);
+    cursor: pointer;
+}
+
+.div-checkbox-color {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.div-checkbox-size {
+    text-align: center;
+    width: 50px;
+    height: 25px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.checked-Color {
+    border: 3px solid rgb(88, 185, 70);
+}
+
+/* Tạo khoảng cách giữa các .div-checkbox */
+.div-checkbox::after {
+    content: '';
+    position: absolute;
+    width: 2px; /* Độ dày của khoảng cách */
+    height: 100%;
+    background-color: transparent; /* Màu trong suốt */
+    top: 0;
+    right: -2px; /* Khoảng cách giữa .div-checkbox và khoảng cách */
+}
+
+/* Đảm bảo rằng ul có display: flex để flex-wrap có hiệu lực */
+.ul {
+    max-width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Thêm margin-bottom để tạo khoảng cách giữa các hàng */
+.li-color {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+.li-size {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+.price {
+    max-width: 230px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-loc {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 1.875rem;
+    padding: 10px;
+    background-color: rgb(21, 183, 40);
+    width: 100%;
+    max-width: 250px;
+    color: aliceblue;
+    cursor: pointer;
+}
