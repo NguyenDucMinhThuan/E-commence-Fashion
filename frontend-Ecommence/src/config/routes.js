@@ -7,6 +7,7 @@ const routes = {
     live: '/live',
     product: '/product',
     detailProduct: '/detailProduct',
+    checkout: '/checkout',
 };
 
 export default routes;

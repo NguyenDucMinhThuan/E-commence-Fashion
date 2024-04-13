@@ -1,4 +1,6 @@
 // import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import config from '~/config';
 
 import classNames from 'classnames/bind';
 import styles from './Cart.module.scss';
@@ -101,9 +103,11 @@ const Cart = ({ setShowCart }) => {
                     <div className={cx('total')}>
                         Tổng cộng: <span className={cx('total-price')}>600,000đ</span>
                     </div>
-                    <button className={cx('btn-loc')} onClick={w3_close}>
-                        Đặt hàng
-                    </button>
+                    <Link to={config.routes.checkout}>
+                        <button className={cx('btn-loc')} onClick={w3_close}>
+                            Đặt hàng
+                        </button>
+                    </Link>
                 </div>
             </div>
             <div className={cx('overlay')} style={{ display: 'block' }} onClick={w3_close} id="myOverlay"></div>
